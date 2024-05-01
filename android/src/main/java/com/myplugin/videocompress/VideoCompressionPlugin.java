@@ -53,7 +53,7 @@ public class VideoCompressionPlugin extends Plugin {
 
         Log.d("Path",file.getAbsolutePath());
 
-        FFmpegSession session = FFmpegKit.executeAsync("-i "+filePath+" -c:v libx264 -crf 27 -preset ultrafast -c:a copy -s 960x540 "+file.getAbsolutePath(), new FFmpegSessionCompleteCallback() {
+        FFmpegSession session = FFmpegKit.executeAsync("-i "+filePath+" -c:v libx264 -crf 27 -preset ultrafast -c:a copy "+file.getAbsolutePath(), new FFmpegSessionCompleteCallback() {
 
             @Override
             public void apply(FFmpegSession session) {
