@@ -1,0 +1,73 @@
+{
+  "api": {
+    "name": "VideoCompressionPlugin",
+    "slug": "videocompressionplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "echo",
+        "signature": "(options: { value: string; }) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ value: string; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "echo"
+      },
+      {
+        "name": "compressVideoUsingFFmpeg",
+        "signature": "(options: VideoCompressionOptionFFmpeg) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "VideoCompressionOptionFFmpeg"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "VideoCompressionOptionFFmpeg"
+        ],
+        "slug": "compressvideousingffmpeg"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "VideoCompressionOptionFFmpeg",
+      "slug": "videocompressionoptionffmpeg",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "inputVideoPath",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "outputVideoName",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
